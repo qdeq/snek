@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {View} from 'react-native';
 import Constants from './Constants';
+import Colors from './colors';
 
 class Tail extends Component {
   constructor(props) {
@@ -16,10 +17,11 @@ class Tail extends Component {
           style={{
             width: this.props.size,
             height: this.props.size,
-            backgroundColor: '#888888',
+            backgroundColor: Colors.BLUE_MUNSELL,
             position: 'absolute',
             left: el[0] * this.props.size,
             top: el[1] * this.props.size,
+            borderRadius: 5,
           }}
         />
       );

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
+import Colors from './colors';
 
 class Head extends Component {
   constructor(props) {
@@ -27,8 +28,9 @@ class Head extends Component {
 
 const styles = StyleSheet.create({
   finger: {
-    backgroundColor: '#888888',
+    backgroundColor: Colors.BLUE_MUNSELL,
     position: 'absolute',
+    borderRadius: 5,
   },
 });
 

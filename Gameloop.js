@@ -68,6 +68,9 @@ const GameLoop = (entities, {touches, events, dispatch}) => {
         tail.elements = [[food.position[0], food.position[1]]].concat(
           tail.elements,
         );
+        dispatch({
+          type: 'eat',
+        });
         food.position[0] = randomBetween(0, Constants.GRID_SIZE - 1);
         food.position[1] = randomBetween(0, Constants.GRID_SIZE - 1);
       }

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
+import Colors from './colors';
 
 class Food extends Component {
   constructor(props) {
@@ -27,8 +28,9 @@ class Food extends Component {
 
 const styles = StyleSheet.create({
   finger: {
-    backgroundColor: 'green',
+    backgroundColor: Colors.ANDROID_GREEN,
     position: 'absolute',
+    borderRadius: 8,
   },
 });
 
